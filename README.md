@@ -5,7 +5,7 @@ Authors often publish metadata across multiple platforms, where it becomes incon
 
 # Getting Started
 
-1. Read SPECIFICATION.md.
+1. Read SPECIFICATIONS.md.
 2. Copy AI.md.
 3. Fill in your metadata.
 4. Publish AI.md on your website.
