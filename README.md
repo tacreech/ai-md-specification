@@ -38,6 +38,25 @@ details.
   executable instructions or attempts to control an agent.
 - **Portable:** the metadata is not tied to a retailer, CMS, host, or AI vendor.
 
+## Reference implementation
+
+The first public implementation is
+[T.A. Creech's canonical book catalogue](https://www.tacreech.com/AI.md). Its
+WordPress discovery stack includes a canonical Markdown route, an XML catalogue
+sitemap, `robots.txt` and `llms.txt` pointers, and an ordinary site-wide HTML
+link.
+
+In August 2026, independent cold-start tests and server access logs confirmed
+that Claude-User and OAI-SearchBot could follow the site's public discovery
+paths and retrieve `/AI.md` with HTTP `200`. This demonstrates that the
+serving and discovery architecture works across multiple crawler systems. It
+does not imply vendor endorsement, guarantee indexing, or guarantee that every
+reader interface can render `text/markdown`.
+
+The live catalogue began as a pre-1.0 implementation. It demonstrates the
+deployment architecture and can adopt the finalized 1.0.0 catalogue-level
+fields in a separate metadata update.
+
 ## Status
 
 This repository contains version 1.0.0 of the specification. Community
